@@ -15,14 +15,13 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.ine.cartografia.dao.IServiceDao;
 import com.ine.cartografia.entity.Usuario;
-import com.ine.cartografia.service.IDaoService;
 
 @Controller
 public class Controlador {
 	private final Logger logger = LoggerFactory.getLogger(Controlador.class);
 
 	@Autowired
-	private IDaoService Consulta;
+	private IServiceDao Consulta;
 	  
 	   @GetMapping("/demo")
 	   public ModelAndView passParametersWithModelAndView(HttpServletRequest request) throws  Exception{

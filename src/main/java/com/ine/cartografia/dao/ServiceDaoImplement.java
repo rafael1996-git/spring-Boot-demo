@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
 
 import com.ine.cartografia.entity.Usuario;
 
-
+@Repository
 public class ServiceDaoImplement implements IServiceDao {
 
 	@Autowired
