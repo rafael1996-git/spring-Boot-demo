@@ -12,15 +12,15 @@
 	<groupId>com.ine.cartografia</groupId>
 	<artifactId>WebPrueba</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>WebPrueba</name>
-		<url>http://maven.apache.org</url>
-	
+	<url>http://maven.apache.org</url>
+
 	<properties>
 		<java.version>11</java.version>
 	</properties>
-		<profiles>
-				<profile>
+	<profiles>
+		<profile>
 			<id>serverLocal</id>
 			<build>
 				<plugins>
@@ -56,17 +56,17 @@
 		</profile>
 	</profiles>
 	<dependencies>
-		<dependency>
-			<groupId>javax</groupId>
-			<artifactId>javaee-web-api</artifactId>
-			<version>7.0</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<scope>provided</scope>
-		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>javax</groupId> -->
+		<!-- <artifactId>javaee-web-api</artifactId> -->
+		<!-- <version>7.0</version> -->
+		<!-- <scope>provided</scope> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>javax.servlet</groupId> -->
+		<!-- <artifactId>javax.servlet-api</artifactId> -->
+		<!-- <scope>provided</scope> -->
+		<!-- </dependency> -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -83,7 +83,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			
+
 			<exclusions>
 				<exclusion>
 					<groupId>org.springframework.boot</groupId>
@@ -93,10 +93,10 @@
 					<groupId>ch.qos.logback</groupId>
 					<artifactId>logback-classic</artifactId>
 				</exclusion>
-				<exclusion>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-tomcat</artifactId>
-            </exclusion>
+<!-- 				<exclusion> -->
+<!-- 					<groupId>org.springframework.boot</groupId> -->
+<!-- 					<artifactId>spring-boot-starter-tomcat</artifactId> -->
+<!-- 				</exclusion> -->
 
 			</exclusions>
 		</dependency>
@@ -120,7 +120,7 @@
 	</dependencies>
 
 	<build>
-		
+
 
 		<plugins>
 			<plugin>
